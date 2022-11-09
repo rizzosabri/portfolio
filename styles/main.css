@@ -43,6 +43,7 @@ h1, h2 {
     color: #09c;
 }
 
+/* SKILLS */
 .skill {
     display: inline-block; /* Sirve para que queden en linea */
     width: 30%;
@@ -152,4 +153,24 @@ h1, h2 {
         display:none
     }
 	#menu li {display:block;float:none;width:auto;}
+}
+
+/* CONTACTO */
+#contacto {
+    margin: 20px;
+}
+
+#contacto label {
+    width: 130px;
+    display: inline-block;
+}
+
+#contacto textarea {
+    width: 296px;
+    height: 163px;
+}
+
+.dato-contacto {
+    display:inline-block;
+    width: 45%;
 }
