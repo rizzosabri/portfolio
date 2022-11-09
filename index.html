@@ -15,8 +15,10 @@
 <body>
     <header>
     <nav id='menu'>
+        <img id="logo" src="img/logo.png" />
+        <input type='checkbox' id='responsive-menu'><label></label>
         <ul>
-            <li><a href='http://'>Proyectos</a></li>
+            <li><a href='#'>Proyectos</a></li>
             <li><a href='#skills'>Skills</a></li>
             <li><a href='#contacto'>Contacto</a></li>
         </ul>
@@ -85,6 +87,7 @@
         
         <hr />
         <div id="contacto">
+            <H2>Contacto</H2>
             <div class="dato-contacto">
                 <label>Nombre:</label> <input type="text" />
             </div>
@@ -94,14 +97,32 @@
             <div class="dato-contacto">
                 <label>Telefono:</label> <input type="text" />
             </div>
-            <div class="dato-contacto">
+            <div class="dato-contacto" pattern="regexp">
                 <label>Github Username:</label> <input type="text" />
             </div>
-            <div >
-                <label>Más Información:</label> <br/>
-                <textarea></textarea>
+            <div>
+                <b>¿Cómo me conociste?</b><br/>
+                <label>Universidad</label><input type="radio" name="medio-contacto" /><br/>
+                <label>Keepcoding</label><input type="radio" name="medio-contacto" /><br/>
+                <label>Colegio</label><input type="radio" name="medio-contacto" /><br/>
+                <label>Github</label><input type="radio" name="medio-contacto" /><br/>
             </div>
+            <div >
+                <b>Más Información:</b> <br/>
+                <textarea maxlength="180">¿Qué más quiere saber?</textarea>
+            </div>
+            <br/>
+            <button>Enviar</button>
         </div>
+
+        <footer>
+            
+<div class="social">
+    <a href="https://www.facebook.com/sabri.rizzo/" target="_blank"><img src="img/facebook.png" /></a>
+    <a href="https://www.linkedin.com/in/sabrina-rizzo-281b6b136/" target="_blank"><img src="img/linkedin.png" /></a>
+    <a href="https://www.instagram.com/rizzosabri/" target="_blank"><img src="img/instagram.png" /></a>
+  </div>
+        </footer>
 
     </div>
 </body>

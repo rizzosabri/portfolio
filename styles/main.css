@@ -5,6 +5,7 @@ body {
     background-color: #d0d7ff;
 }
 
+/* Header */
 .nav-menu{
     background-color: #333;
     overflow: hidden;
@@ -41,6 +42,12 @@ body {
 
 h1, h2 {
     color: #09c;
+}
+
+#logo {
+    width: 38px;
+    position: absolute;
+    top: 4px;
 }
 
 /* SKILLS */
@@ -96,6 +103,7 @@ h1, h2 {
 }
 #menu ul {
 	width: 100%;
+    margin-left: 50px;
 }
 #menu li {
 	float: left;
@@ -109,6 +117,7 @@ h1, h2 {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 16px;
+    transition: all 800ms ease-out;
 }
 #menu a.dropdown-arrow:after {
 	content: "\25BE";
@@ -140,20 +149,16 @@ h1, h2 {
 	margin-left: 20px;
 }
 @media screen and (max-width: 800px){
-	#menu {
-        position:relative
-    }
-	#menu ul {
-        background:#111;
-        position:absolute;
-        top:100%;right:0;
-        left:0;
-        z-index:3;
-        height:auto;
-        display:none
-    }
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
 	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
 }
+
 
 /* CONTACTO */
 #contacto {
@@ -166,11 +171,38 @@ h1, h2 {
 }
 
 #contacto textarea {
-    width: 296px;
+    width: 100%;
     height: 163px;
 }
 
 .dato-contacto {
     display:inline-block;
     width: 45%;
+}
+
+.social {
+    margin-left: 40%;
+}
+.social img {
+    width: 30px;
+}
+
+@media screen and (max-width: 800px){
+    #titulo {
+        left: calc(50% - 125px);
+        top: 208px;
+        font-size:18px;
+    }
+
+    input {
+        width:130px;
+    }
+
+    
+    #logo {
+        left: 50px;
+    }
+    .social {
+        margin-left: 0;
+    }
 }
