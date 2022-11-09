@@ -39,8 +39,46 @@ body {
     margin: 20px;
 }
 
-h1 {
+h1, h2 {
     color: #09c;
+}
+
+.skill {
+    display: inline-block; /* Sirve para que queden en linea */
+    width: 30%;
+    margin-left: 10px;
+}
+.barra, .barra-frontal {
+    width: 100% ;
+    min-height: 12px;
+    background: gray;
+    display: block;
+    border-radius: 5px;
+}
+
+.barra-frontal {
+    background: #09c;
+    margin-top: -12px;
+    width: 100px;
+}
+
+.skill.html .barra-frontal {
+    width: 75%;
+}
+.skill.css .barra-frontal {
+    width: 80%;
+}
+.skill.javascript .barra-frontal {
+    width: 25%;
+}
+.skill.python .barra-frontal {
+    width: 90%;
+}
+.skill.logic .barra-frontal {
+    width: 95%;
+}
+.skill.java .barra-frontal {
+    width: 85%;
 }
 
 /* MENU */
